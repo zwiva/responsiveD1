@@ -1,0 +1,17 @@
+/* Buttons */
+.button {
+  padding: 0.7rem 2rem;
+  border: 2px solid $smokyblack;
+  font-family: $raleway;
+  font-size: $x-large;
+  color: $smokyblack;
+}
+
+.article__button {
+  background-color: $bg-white;
+  &:hover {
+    background-color: $smokyblack;
+    // border-color: $nickel;
+    // color: $nickel;
+  }
+}

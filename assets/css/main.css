@@ -1,0 +1,46 @@
+/* Reset*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Base Styles*/
+body {
+  background-color: #ffffff;
+}
+
+.navbar {
+  position: sticky;
+  box-sizing: content-box;
+  top: 0;
+  background-color: #ffffff;
+}
+.navbar__icon {
+  background-color: #0c0910;
+}
+
+.footer {
+  background-color: #0c0910;
+}
+
+/* Buttons */
+.button {
+  padding: 0.7rem 2rem;
+  border: 2px solid #0c0910;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125em;
+  color: #0c0910;
+}
+
+.article__button {
+  background-color: #ffffff;
+}
+.article__button:hover {
+  background-color: #0c0910;
+}
+
+/*# sourceMappingURL=main.css.map */

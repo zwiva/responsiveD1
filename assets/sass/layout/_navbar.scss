@@ -1,0 +1,9 @@
+.navbar {
+  position: sticky;
+  box-sizing: content-box;
+  top: 0;
+  background-color: $bg-white;
+  &__icon {
+    background-color: $smokyblack;
+  }
+}
