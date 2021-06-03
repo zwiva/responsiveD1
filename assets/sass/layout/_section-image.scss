@@ -1,0 +1,23 @@
+@media (max-width: 575px) {
+  .section__img-size {
+    position: absolute;
+    width: 100%;
+    top: 7vh;
+    
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1023px) {
+  .section__image {
+    
+  }
+  .section__img-size{
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section__img-size{
+    width: 60%;
+  }
+}

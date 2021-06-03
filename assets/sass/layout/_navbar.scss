@@ -1,10 +1,13 @@
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
   box-sizing: content-box;
   background-color: $bg-white;
   height: 7vh;
-  position: relative;
+  width: 100%;
+  &__content {
+    position: relative;
+  }
   &__icon {
     display: flex;
     background-color: $smokyblack;
@@ -30,24 +33,9 @@
     font-family: $raleway;
     font-weight: $bold-typo;
   }
-  // &__list {
-  //   display: flex;
-  //   position: relative;
-  //   list-style-type: none;
-  //   margin-right: auto;
-  //   justify-content: flex-end;
-  // }
-  // &__item {
-  //   padding-right: 0.5rem;
-  //   padding-left: 0.5rem;
-  // }
 }
 
 @media (max-width: 575px) {
-  body {
-    background-color: $smokyblack;
-  }
-
   .navbar__toggler-icon {
     display: flex;
     position: relative;
@@ -59,37 +47,31 @@
   label {
     cursor: pointer;
   }
-
   #menu-toggle {
     display: none;
   }
   #trickMenu {
     display: none;
     text-align: center;
-    background-color: white;
+    background-color: $bg-white;
     padding: 10px 0;
   }
   #trickMenu li a {
     display: block;
     padding: 10px 0;
-    color: black;
+    color: $smokyblack;
     list-style-type: none;
-    background-color: white;
+    background-color: $bg-white;
   }
-
   #menu-toggle:checked + #trickMenu {
     display: block;
   }
   .navbar__item {
-    color:black;
+    color: $smokyblack;
   }
 }
 
 @media (min-width: 576px) and (max-width: 1023px) {
-  body {
-    background-color: red;
-  }
-
   .navbar__list-ul {
     display: flex;
     position: relative;
@@ -111,9 +93,6 @@
 }
 
 @media (min-width: 1024px) {
-  body {
-    background-color: blue;
-  }
   .navbar__list-ul {
     display: flex;
     position: relative;

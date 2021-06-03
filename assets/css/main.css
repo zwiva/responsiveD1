@@ -14,11 +14,14 @@ body {
 }
 
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
   box-sizing: content-box;
   background-color: #ffffff;
   height: 7vh;
+  width: 100%;
+}
+.navbar__content {
   position: relative;
 }
 .navbar__icon {
@@ -48,10 +51,6 @@ body {
 }
 
 @media (max-width: 575px) {
-  body {
-    background-color: #0c0910;
-  }
-
   .navbar__toggler-icon {
     display: flex;
     position: relative;
@@ -72,16 +71,16 @@ body {
   #trickMenu {
     display: none;
     text-align: center;
-    background-color: white;
+    background-color: #ffffff;
     padding: 10px 0;
   }
 
   #trickMenu li a {
     display: block;
     padding: 10px 0;
-    color: black;
+    color: #0c0910;
     list-style-type: none;
-    background-color: white;
+    background-color: #ffffff;
   }
 
   #menu-toggle:checked + #trickMenu {
@@ -89,14 +88,10 @@ body {
   }
 
   .navbar__item {
-    color: black;
+    color: #0c0910;
   }
 }
 @media (min-width: 576px) and (max-width: 1023px) {
-  body {
-    background-color: red;
-  }
-
   .navbar__list-ul {
     display: flex;
     position: relative;
@@ -120,10 +115,6 @@ body {
   }
 }
 @media (min-width: 1024px) {
-  body {
-    background-color: blue;
-  }
-
   .navbar__list-ul {
     display: flex;
     position: relative;
@@ -147,18 +138,20 @@ body {
   }
 }
 @media (max-width: 575px) {
-  body {
-    background-color: #0c0910;
+  .section__img-size {
+    position: absolute;
+    width: 100%;
+    top: 7vh;
   }
 }
 @media (min-width: 576px) and (max-width: 1023px) {
-  body {
-    background-color: red;
+  .section__img-size {
+    width: 100%;
   }
 }
 @media (min-width: 1024px) {
-  body {
-    background-color: blue;
+  .section__img-size {
+    width: 60%;
   }
 }
 .main {
