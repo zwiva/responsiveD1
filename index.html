@@ -9,7 +9,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Raleway:wght@400;700&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css">
+  <script src="https://kit.fontawesome.com/36950a24e5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/main.css">
   <title>XDA</title>
 </head>
 
@@ -18,18 +19,28 @@
     <div class="navbar__icon">
       <span class="navbar__icon-text">XDA</span>
     </div>
+    
     <div class="navbar__list">
-      <ul class="navbar__list-ul">
-        <li class="navbar__item">Mujer</li>
-        <li class="navbar__item">Hombre</li>
-        <li class="navbar__item">Accesorios</li>
-        <li class="navbar__item">Blog</li>
+      <label for="menu-toggle">
+        <div class="navbar__toggler-icon">
+          <i class="fa fa-bars"></i>
+        </div>
+      </label>
+
+      <input type="checkbox" id="menu-toggle" />
+      <ul class="navbar__list-ul" id="trickMenu">
+        <li class="navbar__item"><a href="#">Mujer</a></li>
+        <li class="navbar__item"><a href="#">Hombre</a></li>
+        <li class="navbar__item"><a href="#">Accesorios</a></li>
+        <li class="navbar__item"><a href="#">Blog</a></li>
       </ul>
     </div>
   </nav>
+
   <header class="header">
     <img src="assets/img/imagen1.png" alt="" class="header__img">
   </header>
+
   <main class="main">
     <p class="main__title">LOREM IPSUM AD VALOREM</p>
     <p class="main__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quaerat possimus ex
@@ -37,12 +48,14 @@
       accusamus! Facilis.</p>
     <button class="main__button">Ir a tienda</button>
   </main>
+  
   <footer class="footer">
     <p class="footer__title">Newsletter</p>
     <label for="input">Correo Electrónico</label>
     <input type="text" name="" id="input" placeholder="Ingresa tu correo electrónico" class="footer__input">
-    <p class="footer__text">Suscribir</p>
+    <span class="footer__text">Suscribir</span>
   </footer>
+
 </body>
 
 </html>

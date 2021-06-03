@@ -15,31 +15,203 @@ body {
 
 .navbar {
   position: sticky;
-  box-sizing: content-box;
   top: 0;
+  box-sizing: content-box;
   background-color: #ffffff;
+  height: 7vh;
+  position: relative;
 }
 .navbar__icon {
+  display: flex;
   background-color: #0c0910;
+  position: absolute;
+  height: 7vh;
+  width: 7vh;
+  align-items: center;
+  justify-content: center;
+}
+.navbar__icon-text {
+  color: #ffffff;
+  align-items: center;
+  font-weight: 800;
+  font-size: 1.125em;
+}
+.navbar ul {
+  margin: 0;
+  padding-top: 1.5em;
+}
+.navbar a {
+  text-decoration: none;
+  color: #0c0910;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
 }
 
+@media (max-width: 575px) {
+  body {
+    background-color: #0c0910;
+  }
+
+  .navbar__toggler-icon {
+    display: flex;
+    position: relative;
+    list-style-type: none;
+    margin-right: auto;
+    justify-content: flex-end;
+    padding: 1.5em;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  #trickMenu {
+    display: none;
+    text-align: center;
+    background-color: white;
+    padding: 10px 0;
+  }
+
+  #trickMenu li a {
+    display: block;
+    padding: 10px 0;
+    color: black;
+    list-style-type: none;
+    background-color: white;
+  }
+
+  #menu-toggle:checked + #trickMenu {
+    display: block;
+  }
+
+  .navbar__item {
+    color: black;
+  }
+}
+@media (min-width: 576px) and (max-width: 1023px) {
+  body {
+    background-color: red;
+  }
+
+  .navbar__list-ul {
+    display: flex;
+    position: relative;
+    list-style-type: none;
+    margin-right: auto;
+    justify-content: flex-end;
+    padding-right: 3em;
+  }
+
+  .navbar__item {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .navbar__toggler-icon {
+    display: none;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background-color: blue;
+  }
+
+  .navbar__list-ul {
+    display: flex;
+    position: relative;
+    list-style-type: none;
+    margin-right: auto;
+    justify-content: flex-end;
+    padding-right: 3em;
+  }
+
+  .navbar__item {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .navbar__toggler-icon {
+    display: none;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  body {
+    background-color: #0c0910;
+  }
+}
+@media (min-width: 576px) and (max-width: 1023px) {
+  body {
+    background-color: red;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background-color: blue;
+  }
+}
+.main {
+  height: 20em;
+}
+
+@media (max-width: 575px) {
+  body {
+    background-color: #0c0910;
+  }
+}
+@media (min-width: 576px) and (max-width: 1023px) {
+  body {
+    background-color: red;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background-color: blue;
+  }
+}
 .footer {
+  height: 10em;
   background-color: #0c0910;
+  color: #ffffff;
 }
 
+@media (max-width: 575px) {
+  body {
+    background-color: #0c0910;
+  }
+}
+@media (min-width: 576px) and (max-width: 1023px) {
+  body {
+    background-color: red;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background-color: blue;
+  }
+}
 /* Buttons */
-.button {
+.main__button {
   padding: 0.7rem 2rem;
   border: 2px solid #0c0910;
   font-family: "Raleway", sans-serif;
-  font-size: 1.125em;
+  font-weight: 400;
   color: #0c0910;
-}
-
-.article__button {
   background-color: #ffffff;
 }
-.article__button:hover {
+.main__button:hover {
+  color: #ffffff;
   background-color: #0c0910;
 }
 

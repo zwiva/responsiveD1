@@ -1,9 +1,135 @@
 .navbar {
   position: sticky;
-  box-sizing: content-box;
   top: 0;
+  box-sizing: content-box;
   background-color: $bg-white;
+  height: 7vh;
+  position: relative;
   &__icon {
+    display: flex;
     background-color: $smokyblack;
+    position: absolute;
+    height: 7vh;
+    width: 7vh;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icon-text {
+    color: $bg-white;
+    align-items: center;
+    font-weight: $bold-typo;
+    font-size: $x-large;
+  }
+  ul {
+    margin: 0;
+    padding-top: 1.5em;
+  }
+  a {
+    text-decoration: none;
+    color: $smokyblack;
+    font-family: $raleway;
+    font-weight: $bold-typo;
+  }
+  // &__list {
+  //   display: flex;
+  //   position: relative;
+  //   list-style-type: none;
+  //   margin-right: auto;
+  //   justify-content: flex-end;
+  // }
+  // &__item {
+  //   padding-right: 0.5rem;
+  //   padding-left: 0.5rem;
+  // }
+}
+
+@media (max-width: 575px) {
+  body {
+    background-color: $smokyblack;
+  }
+
+  .navbar__toggler-icon {
+    display: flex;
+    position: relative;
+    list-style-type: none;
+    margin-right: auto;
+    justify-content: flex-end;
+    padding: 1.5em;
+  }
+  label {
+    cursor: pointer;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+  #trickMenu {
+    display: none;
+    text-align: center;
+    background-color: white;
+    padding: 10px 0;
+  }
+  #trickMenu li a {
+    display: block;
+    padding: 10px 0;
+    color: black;
+    list-style-type: none;
+    background-color: white;
+  }
+
+  #menu-toggle:checked + #trickMenu {
+    display: block;
+  }
+  .navbar__item {
+    color:black;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1023px) {
+  body {
+    background-color: red;
+  }
+
+  .navbar__list-ul {
+    display: flex;
+    position: relative;
+    list-style-type: none;
+    margin-right: auto;
+    justify-content: flex-end;
+    padding-right: 3em;
+  }
+  .navbar__item {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .navbar__toggler-icon {
+    display: none;
+  }
+  #menu-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: blue;
+  }
+  .navbar__list-ul {
+    display: flex;
+    position: relative;
+    list-style-type: none;
+    margin-right: auto;
+    justify-content: flex-end;
+    padding-right: 3em;
+  }
+  .navbar__item {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .navbar__toggler-icon {
+    display: none;
+  }
+  #menu-toggle {
+    display: none;
   }
 }

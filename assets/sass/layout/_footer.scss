@@ -1,3 +1,23 @@
 .footer {
+  height: 10em;
   background-color: $smokyblack;
+  color: $bg-white;
+}
+
+@media (max-width: 575px) {
+  body {
+    background-color: $smokyblack;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1023px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: blue;
+  }
 }
