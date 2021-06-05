@@ -3,25 +3,32 @@
   top: 0;
   box-sizing: content-box;
   background-color: $bg-white;
-  height: 7vh;
   width: 100%;
+  //contenedor
   &__content {
     position: relative;
+    flex-direction: row;
   }
+  //logo negro
   &__icon {
+    width: 12%;
+    height: -webkit-fill-available;
+    
     display: flex;
     background-color: $smokyblack;
     position: absolute;
-    height: 7vh;
-    width: 7vh;
     align-items: center;
     justify-content: center;
   }
+  //texto logo negro
   &__icon-text {
     color: $bg-white;
     align-items: center;
     font-weight: $bold-typo;
     font-size: $x-large;
+  }
+  &__toggler-icon {
+    width: 5%;
   }
   ul {
     margin: 0;
@@ -37,12 +44,12 @@
 
 @media (max-width: 575px) {
   .navbar__toggler-icon {
-    display: flex;
+    // display: flex;
     position: relative;
     list-style-type: none;
-    margin-right: auto;
+    margin-left: auto;
     justify-content: flex-end;
-    padding: 1.5em;
+    padding: 1em;
   }
   label {
     cursor: pointer;
@@ -71,7 +78,7 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 1023px) {
+@media (min-width: 576px) {
   .navbar__list-ul {
     display: flex;
     position: relative;
@@ -111,4 +118,10 @@
   #menu-toggle {
     display: none;
   }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 1024px) {
 }

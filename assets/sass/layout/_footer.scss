@@ -1,23 +1,43 @@
+// mobile
 .footer {
-  height: 10em;
+  display: grid;
+  grid-template-columns: 90% 1fr;
   background-color: $smokyblack;
   color: $bg-white;
-}
+  &__main {
+    padding: 0 2em; //padding interno
+  }
+  &__title {
+    font-family: $oldstand;
+    font-weight: $bold-typo;
+    font-size: $x-large;
+    margin: 0.875em 0 0;
+  }
 
-@media (max-width: 575px) {
-  body {
-    background-color: $smokyblack;
+  &__label {
+    font-family: $oldstand;
+    font-weight: $regular;
+    font-size: $xx-small;
+  }
+  &__aside {
+    font-family: $oldstand;
+    font-weight: $bold-typo;
+    text-align: center;
+    background-color: $bg-white;
+    color: $smokyblack;
+    display: flex;
+    justify-content: center;
+  }
+  &__aside-text {
+    font-size: $xx-small;
+    margin: 0;
+    text-orientation: mixed;
+    writing-mode: vertical-rl;
   }
 }
-
-@media (min-width: 576px) and (max-width: 1023px) {
-  body {
-    background-color: red;
-  }
+//tablet
+@media (min-width: 576px) {
 }
-
+//desktop
 @media (min-width: 1024px) {
-  body {
-    background-color: blue;
-  }
 }

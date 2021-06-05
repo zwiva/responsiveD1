@@ -15,49 +15,54 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="navbar__content">
-      <div class="navbar__icon">
-        <span class="navbar__icon-text">XDA</span>
+  <div class="container">
+    <nav class="navbar">
+      <div class="navbar__content">
+        <div class="navbar__icon">
+          <p class="navbar__icon-text">XDA</p>
+        </div>
+
+        <div class="navbar__list">
+          <label for="menu-toggle">
+            <div class="navbar__toggler-icon">
+              <i class="fa fa-bars"></i>
+            </div>
+          </label>
+
+          <input type="checkbox" id="menu-toggle" />
+          <ul class="navbar__list-ul" id="trickMenu">
+            <li class="navbar__item"><a href="#">Mujer</a></li>
+            <li class="navbar__item"><a href="#">Hombre</a></li>
+            <li class="navbar__item"><a href="#">Accesorios</a></li>
+            <li class="navbar__item"><a href="#">Blog</a></li>
+          </ul>
+        </div>
       </div>
-      
-      <div class="navbar__list">
-        <label for="menu-toggle">
-          <div class="navbar__toggler-icon">
-            <i class="fa fa-bars"></i>
-          </div>
-        </label>
-        
-        <input type="checkbox" id="menu-toggle" />
-        <ul class="navbar__list-ul" id="trickMenu">
-          <li class="navbar__item"><a href="#">Mujer</a></li>
-          <li class="navbar__item"><a href="#">Hombre</a></li>
-          <li class="navbar__item"><a href="#">Accesorios</a></li>
-          <li class="navbar__item"><a href="#">Blog</a></li>
-        </ul>
+    </nav>
+
+    <section class="section__image">
+      <img src="assets/img/imagen1.png" alt="" class="section__img-size">
+    </section>
+
+    <article class="article">
+      <p class="article__title">LOREM IPSUM AD VALOREM</p>
+      <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quaerat possimus ex
+        facere nostrum, iusto expedita ratione at </p>
+      <button class="article__button">Ir a tienda</button>
+    </article>
+
+    <footer class="footer">
+      <div class="footer__main">
+        <p class="footer__title">Newsletter</p>
+        <label for="input" class="footer__label">Correo Electrónico</label>
+        <input type="text" name="" id="input" placeholder="Ingresa tu correo electrónico" class="footer__input">
       </div>
-    </div>
-  </nav>
+      <aside class="footer__aside">
+        <p class="footer__aside-text">Suscribir</p>
+      </aside>
+    </footer>
 
-  <section class="section__image">
-    <img src="assets/img/imagen1.png" alt="" class="section__img-size">
-  </section>
-
-  <section class="section__main">
-    <p class="main__title">LOREM IPSUM AD VALOREM</p>
-    <p class="main__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quaerat possimus ex
-      facere nostrum, iusto expedita ratione at rem facilis vero, vitae enim, totam laborum fugiat blanditiis qui
-      accusamus! Facilis.</p>
-    <button class="main__button">Ir a tienda</button>
-  </section>
-  
-  <footer class="footer">
-    <p class="footer__title">Newsletter</p>
-    <label for="input">Correo Electrónico</label>
-    <input type="text" name="" id="input" placeholder="Ingresa tu correo electrónico" class="footer__input">
-    <span class="footer__text">Suscribir</span>
-  </footer>
-
+  </div>
 </body>
 
 </html>

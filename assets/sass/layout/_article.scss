@@ -1,0 +1,24 @@
+.article {
+  box-sizing: content-box;
+  padding: 0 2em;
+  background-color: $bg-white;
+  &__title {
+    font-family: $oldstand;
+    font-size: $xx-large;
+    font-weight: $bold-typo;
+    margin-bottom: 0;
+    // line-height: 1;
+  }
+  &__text {
+    margin-top: 0;
+    font-family: $raleway;
+    font-size: $xx-small;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 1024px) {
+}
