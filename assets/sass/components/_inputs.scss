@@ -6,7 +6,13 @@
 
 //tablet
 @media (min-width: 576px) {
+  .footer__input {
+    // width: 35vw;
+  }
 }
 //desktop
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
+  .footer__input {
+    width: 25vw;
+  }
 }
