@@ -32,7 +32,7 @@
 @media (min-width: 992px) {
   .container {
     grid-template-areas: "navbar navbar" "article section__img" "footer section__img";
-    grid-template-rows: 10vh 2fr;
+    grid-template-rows: 10vh 5fr 3fr;
     grid-template-columns: 1fr 45vw;
     position: relative;
   }

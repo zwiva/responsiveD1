@@ -45,7 +45,7 @@ body {
 @media (min-width: 992px) {
   .container {
     grid-template-areas: "navbar navbar" "article section__img" "footer section__img";
-    grid-template-rows: 10vh 2fr;
+    grid-template-rows: 10vh 5fr 3fr;
     grid-template-columns: 1fr 45vw;
     position: relative;
   }
@@ -310,6 +310,11 @@ body {
   writing-mode: vertical-rl;
 }
 
+@media (min-width: 992px) {
+  .footer__title {
+    margin: 2em 0 0;
+  }
+}
 /* Buttons */
 .article__button {
   padding: 0.7em 1em;
