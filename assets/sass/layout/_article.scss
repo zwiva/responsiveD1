@@ -24,15 +24,17 @@
 @media (min-width: 576px) {
   .article {
     box-sizing: content-box;
-    padding: 0 2em;
+    padding: 0 3em;
     background-color: $bg-white;
     &__title {
       font-family: $oldstand;
       font-size: $xx-large;
       font-weight: $bold-typo;
       margin-bottom: 0;
+      margin-top: 0.5em;
     }
     &__text {
+      max-width: 75%;
       margin-top: 0;
       font-family: $raleway;
       font-size: $xx-small;
@@ -49,21 +51,26 @@
 @media (min-width: 992px) {
   .article {
     box-sizing: content-box;
-    padding: 0 2em;
+    padding: 3em;
     background-color: $bg-white;
-    justify-content: center;
     &__title {
       font-family: $oldstand;
       font-size: $xx-large;
       font-weight: $bold-typo;
+      padding-bottom: 0.8em;
       margin-bottom: 0;
     }
     &__text {
+      max-width: 50%;
       margin-top: 0;
       font-family: $raleway;
       font-size: $xx-small;
-      line-height: 1.5;
-   
+      line-height: 2;
+      // overflow: hidden;
+      // text-overflow: ellipsis;
+      // display: -webkit-box;
+      -webkit-line-clamp: 7; /* number of lines to show */
+      // -webkit-box-orient: vertical;
     }
   }
 }

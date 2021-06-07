@@ -4,7 +4,7 @@
   height: 100vh;
   width: 100%;
   grid-template-areas: "navbar" "section__img" "article" "footer";
-  grid-template-rows: 0.75fr 6fr 8fr 2fr;
+  grid-template-rows: 2vh 12fr 12fr 2fr;
   grid-template-columns: 1fr;
 }
 .navbar {
@@ -22,11 +22,9 @@
 
 @media (min-width: 576px) {
   .container {
-    display: grid;
     height: 100vh;
-    width: 100%;
     grid-template-areas: "navbar" "section__img" "article" "footer";
-    grid-template-rows: 10% 4fr 6fr 2fr;
+    grid-template-rows: 15vh 17fr 16fr 2fr;
     grid-template-columns: 1fr;
   }
 }
@@ -34,8 +32,8 @@
 @media (min-width: 992px) {
   .container {
     grid-template-areas: "navbar navbar" "article section__img" "footer section__img";
-    grid-template-rows: 1.5fr 10fr;
-    grid-template-columns: 4fr 6fr;
+    grid-template-rows: 10vh 2fr;
+    grid-template-columns: 1fr 45vw;
     position: relative;
   }
 }
